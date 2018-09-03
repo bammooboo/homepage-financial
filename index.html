@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Palanquin:400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Financial</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- navigation section -->
+      <div class="navigation">
+        <div class="navigation__contents">
+          <!-- mobile nav dropdown -->
+          <div class="navigation__hamburger dropdown mobile">
+            <img src="assets/Navigation/hamburger.svg" alt="Menu" onClick="openMenu()" />
+            <div class="dropdown__nav-contents">
+              <nav class="dropdown--nav">
+                <ul class="navigation__list">
+                  <li class="nav-choices"><a href="#" class="navigation__link">About</a></li>
+                  <li class="nav-choices"><a href="#" class="navigation__link">Careers</a></li>
+                  <li class="nav-choices"><a href="#" class="navigation__link">Open Banking</a></li>
+                  <li class="nav-choices"><a href="#" class="navigation__link">Work with us</a></li>
+                  <li class="nav-choices"><a href="#" class="navigation__link">Partners</a></li>
+                  <li class="nav-choices"><a href="#" class="navigation__link">Blog</a></li>
+                  <li class="nav-choices"><a href="#" class="navigation__link">FAQ</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- regular nav -->
+          <div class="navigation__logo-container">
+            <img src="assets/Navigation/Logo.svg" alt="Company Logo" class="navigation__logo" />
+          </div>
+          <nav class="navigation__nav desktop">
+            <ul class="navigation__list">
+              <li class="nav-choices"><a href="#" class="navigation__link">About</a></li>
+              <li class="nav-choices"><a href="#" class="navigation__link">Careers</a></li>
+              <li class="nav-choices"><a href="#" class="navigation__link">Open Banking</a></li>
+              <li class="nav-choices"><a href="#" class="navigation__link">Work with us</a></li>
+              <li class="nav-choices"><a href="#" class="navigation__link">Partners</a></li>
+              <li class="nav-choices"><a href="#" class="navigation__link">Blog</a></li>
+              <li class="nav-choices"><a href="#" class="navigation__link">FAQ</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <main>
+        <section class="hero">
+          <div class="hero__header">
+            <h1 class="hero__header--title heading-primary">The financial network.</h1>
+            <h4 class="hero__header--subtitle heading-secondary">A world of financial services brought together in the right place at the right time. Intelligent, personal and connected.</h4>
+          </div>
+          <div class="hero__image">
+            <img src="assets/Background/hero_background.png">
+          </div>
+        </section>
+        <section class="cta-section">
+          <h1 class="cta cta--heading">Open banking changes everything</h1>
+          <div class="cta-section__container">
+            <div class="cta-section__block">
+              <div class="cta-section__image">
+                  <img src="assets/ctas/GreenCube.svg" alt="green cube">
+              </div>
+              <h3 class="cta cta--subheading">For customers</h3>
+              <p class="cta cta--paragraph">Across the world people are reclaiming ownership of their data and harnessing its power to create their own personal experiences.</p>
+            </div>
+            <div class="cta-section__block">
+              <div class="cta-section__image">
+                  <img src="assets/ctas/RedCube.svg" alt="red cube">
+              </div>
+              <h3 class="cta cta--subheading">For banks</h3>
+              <p class="cta cta--paragraph">Smart banks are collaborating with new partners to create new apps and services that meet these heightened expectations.<br>&nbsp;</p>
+            </div>
+            <div class="cta-section__block">
+              <div class="cta-section__image">
+                  <img src="assets/ctas/BlueCube.svg" alt="blue cube">
+              </div>
+              <h3 class="cta cta--subheading">For service providers</h3>
+              <p class="cta cta--paragraph">Collaboration opens new distribution channels for a new generation of financial services providers.<br>&nbsp;</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

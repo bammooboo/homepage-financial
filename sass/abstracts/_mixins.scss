@@ -1,0 +1,93 @@
+@mixin flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  @mixin align-center {
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+  }
+  
+  @mixin justify-space-between {
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+  }
+
+  @mixin justify-center {
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+  }
+  
+  @mixin flow-row {
+    -webkit-flex-flow: row;
+    -moz-flex-flow: row;
+    -ms-flex-flow: row;
+    flex-flow: row;
+  }
+  
+  @mixin flow-column {
+    -webkit-flex-flow: column;
+    -moz-flex-flow: column;
+    -ms-flex-flow: column;
+    flex-flow: column;
+  }
+  
+  @mixin centralize {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  @mixin hide {
+    visibility: hidden;
+    opacity: 0;
+  }
+  
+  @mixin show {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @mixin moveDown-animation {
+    -webkit-animation-name: moveDown;
+    -webkit-animation-duration: .7s;
+    animation-name: moveDown;
+    animation-duration: .7s;
+  }
+  
+  @mixin responsive($breakpoint) {
+    @if $breakpoint == small-phone {
+      @media (max-width: 25em) { @content }; //400px
+    }
+    @if $breakpoint == phone {
+      @media (max-width: 37.5em) { @content }; //600px
+    }
+    @if $breakpoint == large-phone {
+      @media (max-width: 50em) { @content }; //800px
+    }
+    @if $breakpoint == tab-portrait {
+      @media (max-width: 56.25em) { @content }; //900px
+    }
+    @if $breakpoint == tab-landscape {
+      @media (max-width: 75em) { @content }; //1200px
+    }
+    @if $breakpoint == small-desktop {
+      @media (max-width: 86.25em) { @content }; //1380px
+    }
+    @if $breakpoint == desktop {
+      @media (max-width: 92.5em) { @content }; //1480px
+    }
+    @if $breakpoint == -large-desktop {
+      @media (min-width: 112.5em) { @content }; //1800px +
+    }
+  }
+  

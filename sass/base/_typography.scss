@@ -1,0 +1,108 @@
+.nav-choices {
+  list-style: none;
+  color: $color-white;
+  font-family: $font-secondary;
+  font-size: 1.3rem;
+  font-weight: 400;
+  letter-spacing: .3px;
+  line-height: 1.8rem;
+  //check this
+  @include responsive(tab-portrait) {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+  }
+}
+
+.heading-primary {
+  font-family: $font-primary;
+  color: $color-white;
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 8.2rem;
+  @include responsive(small-desktop) {
+    font-size: 7rem;
+  }
+  @include responsive(tab-landscape) {
+    font-size: 6rem;
+  }
+  @include responsive(tab-portrait) {
+    font-size: 5.2rem;
+  }
+  @include responsive(large-phone) {
+    font-size: 4.2rem;
+    line-height: 5.2rem;
+  }
+  @include responsive(phone) {
+    font-size: 3.8rem;
+  }
+}
+
+.heading-secondary {
+  font-family: $font-primary;
+  color: $color-white;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 3.4rem;
+  @include responsive(small-desktop) {
+    font-size: 1.6rem;
+  }
+  @include responsive(tab-landscape) {
+    font-size: 1.4rem;
+  }
+  @include responsive(tab-portrait) {
+    font-size: 1.2rem;
+  }
+  @include responsive(large-phone) {
+    font-size: 1.1rem;
+  }
+}
+
+.cta {
+  font-family: $font-primary;
+
+  &--heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 6rem;
+    text-align: center;
+    color: $color-primary;
+    padding-top: 4.1rem;
+    @include responsive(large-phone) {
+      padding-top: 2rem;
+    }
+  }
+
+  &--subheading {
+    font-size: 2rem;
+    color: $color-primary;
+    line-height: 2.4rem;
+    font-weight: 600;
+    padding-top: 1.296rem;
+    text-align: center;
+    @include responsive(large-phone) {
+      font-size: 1.6rem;
+    }
+    @include responsive(phone) {
+      font-size: 2rem;
+    }
+  }
+
+  &--paragraph {
+    font-size: 1.6rem;
+    color: $color-grey-mid;
+    line-height: 2.4rem;
+    padding-top: 1.6rem;
+    text-align: center;
+    @include responsive(tab-landscape) {
+      font-size: 1.2rem;
+    }
+    @include responsive(large-phone) {
+      padding-top: 0;
+    }
+    @include responsive(phone) {
+      font-size: 1.6rem;
+      padding-top: 1.6rem;
+    }
+  }
+}
+  

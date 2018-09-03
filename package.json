@@ -1,0 +1,26 @@
+{
+  "name": "homepage-financial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bammooboo/homepage-financial.git"
+  },
+  "author": "mw",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bammooboo/homepage-financial/issues"
+  },
+  "homepage": "https://github.com/bammooboo/homepage-financial#readme",
+  "dependencies": {
+    "hoek": "^5.0.4"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.0",
+    "node-sass": "^4.9.3"
+  }
+}

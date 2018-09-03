@@ -1,0 +1,60 @@
+.navigation {
+    background-color: $color-primary;
+  
+    &__contents {
+      @include flex;
+      @include align-center;
+      @include justify-space-between;
+      max-width: 100%;
+      height: 7.2rem;
+      margin: 0 auto;
+      @include responsive(phone) {
+      }
+    }
+  
+    &__logo-container {
+      width: 6.68rem;
+      margin-left: 3.4rem;
+      @include responsive(tab-landscape) {
+        margin-right: 1.4rem;
+      }
+    }
+  
+    &__logo {
+      width: 100%;
+      height: auto;
+    }
+  
+    &__nav {
+      width: 47.5%;
+      margin-right: 6.5rem;
+      @include responsive(tab-landscape) {
+        width: 57.5%;
+      }
+    }
+  
+    &__list {
+      @include flex;
+      @include justify-space-between;
+      text-transform: uppercase;
+      @include responsive(tab-portrait) {
+        flex-flow: column;
+      }
+    }
+  
+    &__link {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: $color-white;
+      }
+    }
+  
+    &__hamburger {
+      @include responsive(tab-portrait) {
+        width: 2.2rem;
+        color: $color-white;
+      }
+    }
+  }
+  
